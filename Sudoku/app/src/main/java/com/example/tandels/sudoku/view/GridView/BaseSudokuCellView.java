@@ -16,11 +16,11 @@ import com.example.tandels.sudoku.R;
 
 public class BaseSudokuCellView extends View {
 
-    private int value;                                       //number of the cell
-    private boolean modifiable=true;
-    int cellPosX;                                           //selected cell's row position
-    int cellPosY;                                           //selected cell's column position
-    int color;                                              //color for the user input number
+    protected int value;                                       //number of the cell
+    protected boolean modifiable=true;
+    protected int cellPosX;                                           //selected cell's row position
+    protected int cellPosY;                                           //selected cell's column position
+    protected int color;                                              //color for the user input number
     private static final String TAG = "BaseSudokuCellView";
 
 
