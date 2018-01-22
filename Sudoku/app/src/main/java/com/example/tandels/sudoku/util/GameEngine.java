@@ -86,7 +86,8 @@ public class GameEngine {
         try {
             if (selectedPosX != -1 && selectedPosY != -1) {
                 grid.setCellValue(selectedPosX, selectedPosY, number);
-                grid.setUsersNumberColor(selectedPosX, selectedPosY, Color.BLUE);
+                if (number != 0)
+                    grid.setUsersNumberColor(selectedPosX, selectedPosY, Color.BLUE);
 
             }
             grid.checkGame();
