@@ -28,7 +28,8 @@ public class SudokuCellView extends BaseSudokuCellView {
 
         drawPuzzlesNumber(canvas);
         drawRect(canvas);
-        drawUsersNumber(canvas,color);
+        if(modifiable == true)
+            drawUsersNumber(canvas,color);
 
         try {
 
